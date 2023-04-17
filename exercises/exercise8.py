@@ -63,9 +63,9 @@ diccionario = {
 } 
 
 # COMPLETAR - INICIO
-diccionario.get("clave1")
+clave1 = diccionario.get("clave1")
 # COMPLETAR - FIN
-
+print(clave1)
 assert clave1 == 234
 
 
@@ -83,11 +83,12 @@ diccionario_2 = {
 }
 
 # COMPLETAR - INICIO
+clave5 = diccionario_2.get("clave5", 5)
 
 # COMPLETAR - FIN
+print(clave5)
 
 assert clave5 == 5
-
 
 """
 Dado el siguiente diccionario obtener una lista de todas sus claves por medio del método keys
@@ -102,10 +103,12 @@ diccionario_3 = {
 
 # COMPLETAR - INICIO
 
-# COMPLETAR - FIN
-print(diccionario_3.keys())
-assert keys == ["clave1", "clave2", "clave3", "clave4"]
+keys = list(diccionario_3.keys())
 
+# COMPLETAR - FIN
+print(keys)
+
+assert keys == ["clave1", "clave2", "clave3", "clave4"]
 
 """
 Dado el siguiente diccionario obtener una lista de todas sus valores por medio del método values
@@ -120,10 +123,12 @@ diccionario_4 = {
 
 # COMPLETAR - INICIO
 
+values = list(diccionario_4.values())
+
 # COMPLETAR - FIN
+print(values)
 
 assert values == [1234, 4567, 8910, 1112]
-
 
 """
 Dado el siguiente diccionario obtener una lista de sus claves y sus valores uno a continuación
@@ -139,10 +144,12 @@ diccionario_5 = {
 
 # COMPLETAR - INICIO
 
+items = list(diccionario_5.items())
+
 # COMPLETAR - FIN
+print(items)
 
 assert items == [(1, 1111), (2, 2222), (3, 3333), (4, 4444)]
-
 
 """
 Dados dos diccionarios actualizar el primero con los valores del segundo utilizando el método update
@@ -164,6 +171,9 @@ diccionario_7 = {
 
 # COMPLETAR - INICIO
 
+diccionario_6.update(diccionario_7)
+
 # COMPLETAR - FIN
+print(diccionario_6)
 
 assert diccionario_6 == {1: 1111, 2: 2223, 3: 3334, 4: 4444, 5: 5555, 6: 6666}

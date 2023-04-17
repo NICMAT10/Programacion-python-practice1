@@ -8,9 +8,9 @@ Interpretar como booleano la siguente variable y guardar el valor resultante en 
 A = 5
 
 # COMPLETAR - INICIO
-
+variable_01 = bool(5)
 # COMPLETAR - FIN
-
+print(variable_01)
 assert variable_01 is True
 
 
