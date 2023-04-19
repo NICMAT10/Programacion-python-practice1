@@ -19,6 +19,7 @@ conjunto_1.add(numero_3)
 
 
 # COMPLETAR - FIN
+print(conjunto_1)
 
 assert conjunto_1 == {1, 2, 3}
 
@@ -46,7 +47,7 @@ conjunto_2.add(edad)
 
 
 # COMPLETAR - FIN
-
+print(conjunto_2)
 assert conjunto_2 == {"35", "Esteban", "7", "6", "Los sauces 3446", "5"}
 
 """
@@ -61,7 +62,7 @@ conjunto_04 = {12, 4, 10, 21, 78}
 conjunto_interseccion = conjunto_03 & conjunto_04
 
 # COMPLETAR - FIN
-
+print(conjunto_interseccion)
 assert conjunto_interseccion == {10, 4, 21}
 
 """
@@ -76,7 +77,7 @@ conjunto_04 = {12, 4, 10, 21, 78}
 conjunto_interseccion =conjunto_03.intersection(conjunto_04)
 
 # COMPLETAR - FIN
-
+print(conjunto_interseccion)
 assert conjunto_interseccion == {10, 4, 21}
 """
 Dados dos conjuntos calcular su union utiilizando el caracter pipe
@@ -90,7 +91,7 @@ conjunto_06 = {5, 6, 7, 8}
 conjunto_union = conjunto_05 | conjunto_06
 
 # COMPLETAR - FIN
-
+print(conjunto_union)
 assert conjunto_union == {1, 2, 3, 4, 5, 6, 7, 8}
 
 """
@@ -104,7 +105,7 @@ conjunto_06 = {5, 6, 7, 8}
 conjunto_union= conjunto_05.union(conjunto_06)
 
 # COMPLETAR - FIN
-
+print(conjunto_union)
 assert conjunto_union == {1, 2, 3, 4, 5, 6, 7, 8}
 
 """
@@ -119,7 +120,7 @@ conjunto_08 = {2, 4, 6, 8}
 conjunto_diferencia= conjunto_07 - conjunto_08
 
 # COMPLETAR - FIN
-
+print(conjunto_diferencia)
 assert conjunto_diferencia == {1, 3, 5, 7}
 
 """
@@ -134,7 +135,7 @@ conjunto_08 = {2, 4, 6, 8}
 conjunto_diferencia = conjunto_07.difference(conjunto_08)
 
 # COMPLETAR - FIN
-
+print(conjunto_diferencia)
 assert conjunto_diferencia == {1, 3, 5, 7}
 """
 Dados dos conjuntos calcular su diferencia diferencia simetrica utiilizando el caracter circunflejo
@@ -146,7 +147,7 @@ conjunto_10 = {1, 2, 3, 5, 6, 7, 8}
 # COMPLETAR - INICIO
 conjunto_diferencia_simetrica = conjunto_09^conjunto_10
 # COMPLETAR - FIN
-
+print(conjunto_diferencia_simetrica)
 assert conjunto_diferencia_simetrica == {4, 9}
 """
 Dados dos conjuntos calcular su diferencia diferencia simetrica utiilizando el metodo symmetric_difference
@@ -160,5 +161,5 @@ conjunto_10 = {1, 2, 3, 5, 6, 7, 8}
 conjunto_diferencia_simetrica = conjunto_09.symmetric_difference(conjunto_10)
 
 # COMPLETAR - FIN
-
+print(conjunto_diferencia_simetrica)
 assert conjunto_diferencia_simetrica == {4, 9}
